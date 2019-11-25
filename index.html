@@ -1,0 +1,4884 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset='utf-8' />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="description" content="Jekyll-DB : An easy way to use Jekyll and Github Pages as a "database"." />
+
+
+
+<title>Jekyll-DB</title>
+
+<title>Exoplanet RV Catalogue</title>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="javascripts/list.js"></script>
+<!-- <script src="javascripts/expand.js"></script> -->
+<script src="javascripts/sorttable1.js"></script>
+<!-- <script  type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+<body style>
+<div class="container">
+
+  <div class="starter-template row">
+    <h1>An Online Catalogue of Exoplanet Data</h1>
+    <p class="lead">A catalogue of stars,their parameters, radial velocity data and their detected corresponding exoplanets.</p>
+  </div>
+<div class="row">
+<p></medium>Stars parameters taken and updated from <a href="https://www.astro.up.pt/resources/sweet-cat/">SWEET-Cat</a> and exoplanet data according to <a href="http://exoplanet.eu/">Exoplanet.eu</a>.</medium>.</p>
+</div>
+
+
+
+
+<!-- determines the number of stars and exoplanets in the catalogue -->
+
+
+
+
+
+
+
+
+
+<div id="entry-list">
+
+<div class="row"> <b>Total Number of Stars: </b>17</div>
+<div class="row"> <b>Total Number of Planets: </b>21</div>
+
+	
+	
+<div class="row" style="margin-bottom:10px;">
+
+  <i id="search" class="fa fa-search" ></i>
+ 
+
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" />
+	
+</div>
+
+<div class="row">
+<table id="myTable" class="table table-striped sortable">
+	<thead >
+		<tr>
+			<th style="width:14%;" class='name' >Star <br></br></th>
+			<th style="width:14%;" class='mass' >Mass <br> [M<sub>Jup</sub>]</th>
+			<th style="width:14%;" class='teff' >Teff <br> [K]</th>
+			<th style="width:14%;" class='feh'  >[Fe/H] <br> [dex] </th>
+			<th style="width:14%;" class='data'  >rvData <br></br> </th>
+			<th style="width:10%;" class='planets'>Exoplanets <br></br>  </th>
+			<th style="width:4%;" ></th>
+			<th style="width:18%;" class='pmass' >Mass <br> [M<sub>Jup</sub>]</th>
+			<th style="width:4%;" ></th>
+			<th style="width:15%;" class='pperiod'>Period [days]</th>
+		</tr>
+	</thead>
+
+
+
+    <tbody class="list sortable">
+    
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>16 Cyg B</td>
+			<td style="width:12.5%;" class='mass'>1.01</td>
+			<td style="width:12.5%;" class='teff'>5783.0</td>
+			<td style="width:12.5%;" class='feh'  >0.09</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="1data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >16 Cyg B b<td/>	
+			<td style="width:8%;" class='pmass'  >1.68<td/>
+			<td style="width:12.5%;"class='pperiod'>799.5<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>14 Her</td>
+			<td style="width:12.5%;" class='mass'>0.99</td>
+			<td style="width:12.5%;" class='teff'>5286.0</td>
+			<td style="width:12.5%;" class='feh'  >0.38</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="2data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >14 Her b<td/>	
+			<td style="width:8%;" class='pmass'  >4.64<td/>
+			<td style="width:12.5%;"class='pperiod'>1773.4<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>24 Sex</td>
+			<td style="width:12.5%;" class='mass'>1.4</td>
+			<td style="width:12.5%;" class='teff'>5069.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.01</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="3data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >24 Sex b<td/>	
+			<td style="width:8%;" class='pmass'  >1.99<td/>
+			<td style="width:12.5%;"class='pperiod'>452.8<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+
+		
+
+
+
+				<tr  >	
+					<td width=12.5%  style="font-size: 0px; " class='name' >24 Sexa </td>
+					<td width=12.5% class='mass' ></td>
+					<td width=12.5% class='teff' ></td>
+					<td width=12.5% class='data' ></td>
+					<td width=12.5%  class='feh' >
+						
+					</td>
+					
+					<td width=12.5%  class='planets' >24 Sex c<td/>	
+					<td width=12.5% class='pmass'  >0.86<td/>	
+					<td  width=12.5% class='pperiod'>883.0<td/>	
+					<td width=12.5%></td>
+
+				
+			
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>24 Boo</td>
+			<td style="width:12.5%;" class='mass'>2.72</td>
+			<td style="width:12.5%;" class='teff'>4893.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.77</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="4data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >24 Boo b<td/>	
+			<td style="width:8%;" class='pmass'  >0.91<td/>
+			<td style="width:12.5%;"class='pperiod'>30.3506<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>1SWASP J1407</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>4400.0</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="5data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >1SWASP J1407 b<td/>	
+			<td style="width:8%;" class='pmass'  >20.0<td/>
+			<td style="width:12.5%;"class='pperiod'>3725.0<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>18 Del</td>
+			<td style="width:12.5%;" class='mass'>1.76</td>
+			<td style="width:12.5%;" class='teff'>5076.0</td>
+			<td style="width:12.5%;" class='feh'  >0.0</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="6data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >18 Del b<td/>	
+			<td style="width:8%;" class='pmass'  >10.3<td/>
+			<td style="width:12.5%;"class='pperiod'>993.3<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>14 And</td>
+			<td style="width:12.5%;" class='mass'>2.38</td>
+			<td style="width:12.5%;" class='teff'>4709.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.29</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="7data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >14 And b<td/>	
+			<td style="width:8%;" class='pmass'  >5.33<td/>
+			<td style="width:12.5%;"class='pperiod'>185.84<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>11 UMi</td>
+			<td style="width:12.5%;" class='mass'>3.4</td>
+			<td style="width:12.5%;" class='teff'>4255.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.13</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="8data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >11 UMi b<td/>	
+			<td style="width:8%;" class='pmass'  >10.5<td/>
+			<td style="width:12.5%;"class='pperiod'>516.22<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>11 Com</td>
+			<td style="width:12.5%;" class='mass'>2.14</td>
+			<td style="width:12.5%;" class='teff'>4830.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.34</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="9data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >11 Com b<td/>	
+			<td style="width:8%;" class='pmass'  >19.4<td/>
+			<td style="width:12.5%;"class='pperiod'>326.03<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>KIC 5010054</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>5550.0</td>
+			<td style="width:12.5%;" class='feh'  >0.0</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="10data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >KIC 5010054 b<td/>	
+			<td style="width:8%;" class='pmass'  >nan<td/>
+			<td style="width:12.5%;"class='pperiod'>904.24<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>GJ 682</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>3028.0</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="11data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >GJ 682 b<td/>	
+			<td style="width:8%;" class='pmass'  >0.0138438788031<td/>
+			<td style="width:12.5%;"class='pperiod'>17.478<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+
+		
+
+
+
+				<tr  >	
+					<td width=12.5%  style="font-size: 0px; " class='name' >GJ 682a </td>
+					<td width=12.5% class='mass' ></td>
+					<td width=12.5% class='teff' ></td>
+					<td width=12.5% class='data' ></td>
+					<td width=12.5%  class='feh' >
+						
+					</td>
+					
+					<td width=12.5%  class='planets' >GJ 682 c<td/>	
+					<td width=12.5% class='pmass'  >0.027365121<td/>	
+					<td  width=12.5% class='pperiod'>57.32<td/>	
+					<td width=12.5%></td>
+
+				
+			
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>GJ 422</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>3323.0</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="12data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >GJ 422 b<td/>	
+			<td style="width:8%;" class='pmass'  >0.0311487273071<td/>
+			<td style="width:12.5%;"class='pperiod'>26.161<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>GJ 27.1</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>3542.0</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="13data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >GJ 27.1 b<td/>	
+			<td style="width:8%;" class='pmass'  >0.0409023691911<td/>
+			<td style="width:12.5%;"class='pperiod'>15.819<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>GJ 180</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>3371.0</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="14data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >GJ 180 b<td/>	
+			<td style="width:8%;" class='pmass'  >0.0261145895605<td/>
+			<td style="width:12.5%;"class='pperiod'>17.38<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+
+		
+
+
+
+				<tr  >	
+					<td width=12.5%  style="font-size: 0px; " class='name' >GJ 180a </td>
+					<td width=12.5% class='mass' ></td>
+					<td width=12.5% class='teff' ></td>
+					<td width=12.5% class='data' ></td>
+					<td width=12.5%  class='feh' >
+						
+					</td>
+					
+					<td width=12.5%  class='planets' >GJ 180 c<td/>	
+					<td width=12.5% class='pmass'  >0.0201365509864<td/>	
+					<td  width=12.5% class='pperiod'>24.329<td/>	
+					<td width=12.5%></td>
+
+				
+			
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>KIC 9704149</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>5640.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.16</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="15data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >KIC 9704149 b<td/>	
+			<td style="width:8%;" class='pmass'  >nan<td/>
+			<td style="width:12.5%;"class='pperiod'>697.0159<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>KIC 9662267</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>5602.0</td>
+			<td style="width:12.5%;" class='feh'  >-0.03</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="16data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >KIC 9662267 b<td/>	
+			<td style="width:8%;" class='pmass'  >nan<td/>
+			<td style="width:12.5%;"class='pperiod'>466.202<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+	
+				
+			
+	
+		
+		
+		
+		
+
+		<!-- default values for the variable in case there is no data file -->
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+			
+			
+			
+			
+			
+
+			
+			
+			<!-- match star/post to data file -->
+			
+
+			
+				
+	
+		
+		
+
+		
+
+		
+		<!-- variables to assign the cell id as a function of the star post -->
+		
+		
+		
+		
+
+		
+		
+	
+		
+		<tr> 
+			<td style="width:12.5%;" class='name'>Kepler-396</td>
+			<td style="width:12.5%;" class='mass'>nan</td>
+			<td style="width:12.5%;" class='teff'>nan</td>
+			<td style="width:12.5%;" class='feh'  >nan</td>
+		
+			<td style="width:12.5%; font-size: 10px; " class='data' id="17data" >not available</td>
+		
+			<td style="width:12.5%; " class='planets' >Kepler-396 b<td/>	
+			<td style="width:8%;" class='pmass'  >nan<td/>
+			<td style="width:12.5%;"class='pperiod'>42.994<td/>
+			<td style="width:15%;"></td>
+		
+		
+		
+		
+
+		
+
+		
+
+
+
+				<tr  >	
+					<td width=12.5%  style="font-size: 0px; " class='name' >Kepler-396a </td>
+					<td width=12.5% class='mass' ></td>
+					<td width=12.5% class='teff' ></td>
+					<td width=12.5% class='data' ></td>
+					<td width=12.5%  class='feh' >
+						
+					</td>
+					
+					<td width=12.5%  class='planets' >Kepler-396 c<td/>	
+					<td width=12.5% class='pmass'  >nan<td/>	
+					<td  width=12.5% class='pperiod'>88.505<td/>	
+					<td width=12.5%></td>
+
+				
+			
+		
+
+		
+	
+				
+			
+		
+
+	</tbody>
+
+	
+	
+</table> 
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+var options = {
+//   valueNames: ['name', 'mass', 'teff', 'feh' , 'data' , 'planets' , 'pmass' , 'pperiod']
+  valueNames: ['name', 'planets']
+};
+
+var entryList = new List('entry-list', options);
+
+</script>
+
+
+<script type="text/javascript" >
+	function change(x,y,data,name,data2,name2,data3,name3,num) {
+				
+				/* identifies id and changes cell element to render the chart  */
+				
+				var n = x.toString(); 
+				var l = "last"; var lc = "lastc"; var ld = "lastd";
+				var join = n.concat(l); var joinc = n.concat(lc); var joind = n.concat(ld);
+				var cell=document.getElementById(join);
+
+				cell.height=350; 
+
+
+				/* 1st data series  */
+			
+				var seq=range(0,data.length-1,3); var rawd=data; var number; var points = [];
+
+
+				;
+
+				var dataSeries = { type: "scatter" ,
+					showInLegend: true,
+
+					name: name,
+					
+					markerType: "circle"};
+
+				var dataPoints = []; var errorPoints = [];
+				
+				var error = {type: "error",
+					color: "blue",
+					name:"error range"};
+		
+				var minimo=rawd[0]-(rawd[3]-rawd[0]); var maximo=rawd[rawd.length-3]+2*(rawd[3]-rawd[0]);
+			
+				for (number of seq){
+				
+					dataPoints.push({
+					x: rawd[number],
+					y: rawd[number+1]                
+					});
+				
+				
+					var mini=rawd[number+1]-rawd[number+2]/2; var maxi=rawd[number+1]+rawd[number+2]/2; 
+					errorPoints.push({
+					x: rawd[number],
+					y: [mini,maxi]});
+				
+					
+					}
+
+				dataSeries.dataPoints = dataPoints;
+				error.dataPoints=errorPoints;
+
+				points.push(dataSeries); points.push(error);
+
+
+
+
+				if ( num > 1){
+
+					/* 2nd data series if there is one */
+
+					var seq2=range(0,data2.length-1,3); var rawd2=data2; var number2; var points2 = [];
+
+					var dataSeries2 = { type: "scatter" ,
+					showInLegend: true,
+					name: name2,
+					
+					markerType: "circle"};
+
+					var dataPoints2 = []; var errorPoints2 = [];
+
+					var error2 = {type: "error",
+					color:"green",
+					name:"error range"};
+
+					var minimo2=rawd2[0]-2*(rawd2[6]-rawd2[0]); var maximo2=rawd2[rawd2.length-3]+2*(rawd2[6]-rawd2[0]);
+
+					maximo=Math.max(maximo,maximo2); minimo=Math.max(minimo,minimo2);
+
+					for (number2 of seq2){
+				
+						dataPoints2.push({
+							x: rawd2[number2],
+							y: rawd2[number2+1]                
+						});
+					
+					
+						var mini2=rawd2[number2+1]-rawd2[number2+2]/2; var maxi2=rawd2[number2+1]+rawd2[number2+2]/2; 
+						
+						errorPoints2.push({
+							x: rawd2[number2],
+							y: [mini2,maxi2]});
+						
+					}
+
+					dataSeries2.dataPoints = dataPoints2;
+					error2.dataPoints=errorPoints2;
+					points.push(dataSeries2); points.push(error2);
+
+					if ( num > 2){
+
+						/* 3rd data series if there is one */
+
+
+						var seq3=range(0,data3.length-1,3); var rawd3=data3; var number3; var points3 = [];
+
+						var dataSeries3 = { type: "scatter" ,
+						showInLegend: true,
+						color: "darkred",
+						name: name3,
+						
+						markerType: "circle"};
+
+						var dataPoints3 = []; var errorPoints3 = [];
+
+						var error3 = {type: "error",
+						color: "red",
+						name:"error range"};
+
+						var minimo3=rawd3[0]-2*(rawd3[6]-rawd3[0]); var maximo3=rawd3[rawd3.length-3]+2*(rawd3[6]-rawd3[0]);
+
+						maximo=Math.max(maximo,maximo2,maximo3); minimo=Math.max(minimo,minimo2,minimo3);
+
+						for (number3 of seq3){
+					
+							dataPoints3.push({
+								x: rawd3[number3],
+								y: rawd3[number3+1]                
+							});
+						
+						
+							var mini3=rawd3[number3+1]-rawd3[number3+2]/2; var maxi3=rawd3[number3+1]+rawd3[number3+2]/2; 
+							
+							errorPoints3.push({
+								x: rawd3[number3],
+								y: [mini3,maxi3]});
+							
+						}
+
+						dataSeries3.dataPoints = dataPoints3;
+						error3.dataPoints=errorPoints3;
+						points.push(dataSeries3); points.push(error3);
+					}
+
+				}
+
+
+				/* makes download and close buttons visible */
+
+				var botao=document.getElementById(joinc); var down=document.getElementById(joind);
+			
+				botao.style.display="block"; down.style.display="block";
+
+	
+				/* chart configuration */
+
+				var chart = new CanvasJS.Chart(cell, {
+					//in pixels
+				    height:320,//in pixels
+				    position:"relative",
+				    float:"right",
+					animationEnabled: false,
+					zoomEnabled: true,
+					zoomType: "xy",
+				
+					axisX: {
+						title: "time (days)",
+						includeZero: false,
+						minimum: minimo ,
+						maximum: maximo,
+					},
+					axisY:{
+						title: "Radial Velocity (Km/s)",
+						gridThickness: 0,
+						includeZero: false
+					},
+					
+					data: points
+				});
+				chart.render();
+
+					/* for the close button only */
+					if (y==0){
+						chart.destroy();
+						cell.height=0;
+						botao.style.display="none";
+						down.style.display="none";
+					}
+	}
+
+
+		
+
+	
+</script>
+
+
+
+
+
+<script type="">
+	function range(start, end, step = 1) {
+  
+  // Test that the first 3 arguments are finite numbers.
+  // Using Array.prototype.every() and Number.isFinite().
+  const allNumbers = [start, end, step].every(Number.isFinite);
+
+  // Throw an error if any of the first 3 arguments is not a finite number.
+  if (!allNumbers) {
+    throw new TypeError('range() expects only finite numbers as arguments.');
+  }
+  
+  // Ensure the step is always a positive number.
+  if (step <= 0) {
+    throw new Error('step must be a number greater than 0.');
+  }
+  
+  // When the start number is greater than the end number,
+  // modify the step for decrementing instead of incrementing.
+  if (start > end) {
+    step = -step;
+  }
+  
+  // Determine the length of the array to be returned.
+  // The length is incremented by 1 after Math.floor().
+  // This ensures that the end number is listed if it falls within the range.
+  const length = Math.floor(Math.abs((end - start) / step)) + 1;
+  
+  // Fill up a new array with the range numbers
+  // using Array.from() with a mapping function.
+  // Finally, return the new array.
+  return Array.from(Array(length), (x, index) => start + index * step);
+  
+   }
+
+
+</script>
+
+<script>
+function myFunction() {
+  // Declare variables 
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>
+
+<style type="text/css">
+	#myInput {
+ float: right;
+  width: 98%; 
+  font-size: 16px; 
+  padding: 4px 2px 4px 4px;
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+#search {
+ float: left;
+ font-size: 16px;
+  width: 2%; 
+   margin-top:  6px;
+}
+</style>
+
+
+
+</div><!-- /.container -->
+
+</div>
+
+</body>
+</html>

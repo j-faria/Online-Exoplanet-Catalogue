@@ -1,0 +1,171 @@
+[{
+	"Star-name": "16 Cyg B",
+	"teff": "5783.0",
+	"feh": "0.09",
+	"mass": "1.01",
+ 	"Exoplanets": "16 Cyg B b",
+ 	"Exoplanets-Mass": "1.68",
+ 	"Exoplanets-Period": "799.5",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "14 Her",
+	"teff": "5286.0",
+	"feh": "0.38",
+	"mass": "0.99",
+ 	"Exoplanets": "14 Her b",
+ 	"Exoplanets-Mass": "4.64",
+ 	"Exoplanets-Period": "1773.4",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "24 Sex",
+	"teff": "5069.0",
+	"feh": "-0.01",
+	"mass": "1.4",
+ 	"Exoplanets": "24 Sex b24 Sex c",
+ 	"Exoplanets-Mass": "1.990.86",
+ 	"Exoplanets-Period": "452.8883.0",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "24 Boo",
+	"teff": "4893.0",
+	"feh": "-0.77",
+	"mass": "2.72",
+ 	"Exoplanets": "24 Boo b",
+ 	"Exoplanets-Mass": "0.91",
+ 	"Exoplanets-Period": "30.3506",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "1SWASP J1407",
+	"teff": "4400.0",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "1SWASP J1407 b",
+ 	"Exoplanets-Mass": "20.0",
+ 	"Exoplanets-Period": "3725.0",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "18 Del",
+	"teff": "5076.0",
+	"feh": "0.0",
+	"mass": "1.76",
+ 	"Exoplanets": "18 Del b",
+ 	"Exoplanets-Mass": "10.3",
+ 	"Exoplanets-Period": "993.3",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "14 And",
+	"teff": "4709.0",
+	"feh": "-0.29",
+	"mass": "2.38",
+ 	"Exoplanets": "14 And b",
+ 	"Exoplanets-Mass": "5.33",
+ 	"Exoplanets-Period": "185.84",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "11 UMi",
+	"teff": "4255.0",
+	"feh": "-0.13",
+	"mass": "3.4",
+ 	"Exoplanets": "11 UMi b",
+ 	"Exoplanets-Mass": "10.5",
+ 	"Exoplanets-Period": "516.22",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "11 Com",
+	"teff": "4830.0",
+	"feh": "-0.34",
+	"mass": "2.14",
+ 	"Exoplanets": "11 Com b",
+ 	"Exoplanets-Mass": "19.4",
+ 	"Exoplanets-Period": "326.03",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "KIC 5010054",
+	"teff": "5550.0",
+	"feh": "0.0",
+	"mass": "nan",
+ 	"Exoplanets": "KIC 5010054 b",
+ 	"Exoplanets-Mass": "nan",
+ 	"Exoplanets-Period": "904.24",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "GJ 682",
+	"teff": "3028.0",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "GJ 682 bGJ 682 c",
+ 	"Exoplanets-Mass": "0.01384387880310.027365121",
+ 	"Exoplanets-Period": "17.47857.32",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "GJ 422",
+	"teff": "3323.0",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "GJ 422 b",
+ 	"Exoplanets-Mass": "0.0311487273071",
+ 	"Exoplanets-Period": "26.161",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "GJ 27.1",
+	"teff": "3542.0",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "GJ 27.1 b",
+ 	"Exoplanets-Mass": "0.0409023691911",
+ 	"Exoplanets-Period": "15.819",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "GJ 180",
+	"teff": "3371.0",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "GJ 180 bGJ 180 c",
+ 	"Exoplanets-Mass": "0.02611458956050.0201365509864",
+ 	"Exoplanets-Period": "17.3824.329",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "KIC 9704149",
+	"teff": "5640.0",
+	"feh": "-0.16",
+	"mass": "nan",
+ 	"Exoplanets": "KIC 9704149 b",
+ 	"Exoplanets-Mass": "nan",
+ 	"Exoplanets-Period": "697.0159",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "KIC 9662267",
+	"teff": "5602.0",
+	"feh": "-0.03",
+	"mass": "nan",
+ 	"Exoplanets": "KIC 9662267 b",
+ 	"Exoplanets-Mass": "nan",
+ 	"Exoplanets-Period": "466.202",
+ 	"Number-Exoplanets": "",
+
+},{
+	"Star-name": "Kepler-396",
+	"teff": "nan",
+	"feh": "nan",
+	"mass": "nan",
+ 	"Exoplanets": "Kepler-396 bKepler-396 c",
+ 	"Exoplanets-Mass": "nannan",
+ 	"Exoplanets-Period": "42.99488.505",
+ 	"Number-Exoplanets": "",
+
+}]

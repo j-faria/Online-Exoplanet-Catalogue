@@ -1,0 +1,49 @@
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	zoomEnabled: true,
+	// title:{
+	// 	text: "RV data"
+	// },
+	axisX: {
+		title: "Time [days]",
+        valueFormatString: "#####.#"
+	},
+	axisY: {
+		title: "RV [m/s]",
+		includeZero: false,
+        suffix: "",
+        gridThickness: 0,
+		// interlacedColor: '#color',
+	},
+	legend:{
+		cursor: "pointer",
+		fontSize: 16,
+		itemclick: toggleDataSeries
+	},
+	toolTip:{
+		shared: false,
+	},
+	data: [
+DATA
+	]
+});
+chart.render();
+
+function toggleDataSeries(e){
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	}
+	else{
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+
+}
+</script>
+<div id="chartContainer" style="width: 100%;"></div>
+<!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<script src="/assets/js/canvasjs.min.js"></script>
